@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+    color: #1B1918;
+    font-family: 'SF Pro Display';
+}
+
+@font-face {
+    font-family: 'Winter Sans Trial regular';
+    src: url(./fonts/WinterSansTrial/WinterSansTrial-Regular.otf);
+}
+@font-face {
+    font-family: 'Winter Sans Trial italic';
+    src: url(./fonts/WinterSansTrial/WinterSansTrial-Italic.otf);
+}
+@font-face {
+    font-family: 'Winter Sans Trial extrabold';
+    src: url(./fonts/WinterSansTrial/WinterSansTrial-ExtraBold.otf);
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(./fonts/SFpro/SF-Pro-Display-Regular.otf);
+}
+@font-face {
+    font-family: 'SF Pro Display medium';
+    src: url(./fonts/SFpro/SF-Pro-Display-Medium.otf);
+}
+
+body{
+    background-color: #F6F6F6;
+}
+
+.header{
+    z-index: 100;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 3rem;
+    background-color: #1B1918;
+    padding: 0 4.8rem 0 4.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    column-gap: 10.8rem;
+    align-items: center;
+}
+
+.container__place{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    flex-direction: row;
+    height: 100%;
+}
+
+.container__navigation{
+    display: flex;
+    align-items: center;
+    gap: 1.44rem;
+    height: 100%;
+}
+
+.container__navigation p{
+    color : #8D8C8B;
+    font-size: 0.72rem;
+    cursor: pointer;
+}
+
+.place{
+    color : white;
+    font-size: 0.78rem;
+}
+
+.phone{
+    font-size: 0.84rem;
+    font-weight: 600;
+    background-color: #E5261E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 11.7rem;
+}
+
+.phone p{
+    color : white;
+}
+
+.menu{
+    margin-top: 4rem;
+    height: 4rem;
+    padding: 0 0.84rem 0 0.84rem;
+    margin-left: 4.8rem;
+    margin-right: 4.8rem;
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.container2{
+    height: 100%;
+    display: flex;
+    column-gap: 5.6rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.36rem;
+}
+
+.container2__catalog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+    column-gap: 1.34rem;
+}
+
+.container2__catalog p{
+    color : #1B1918;
+    font-size: 0.84rem;
+    cursor: pointer;
+}
+
+.icons{
+    display: flex;
+    column-gap: 0.84rem;
+    height: 100%;
+    align-items: center;
+}
+
+.ico{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.64rem;
+    width: 2.64rem;
+    background-color: #F6F6F6;
+    cursor: pointer;
+}
+
+.count{
+    font-size: 0.4rem;
+    font-weight: 800;
+    position: absolute;
+    top: -0.44rem;
+    right: -0.44rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1rem;
+    width: 1rem;
+    background-color: #E5261E;
+    border-radius: 50%;
+    color: white;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 11.7rem;
+    gap: 1rem;
+    margin-left: 4.8rem;
+    margin-right: 4.8rem;
+    margin-bottom: 4rem;
+}
+
+.grid__main{
+    position: relative;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    overflow: hidden;
+}
+
+.grid__main__uppertext{
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem;
+    border-right: #E5261E 0.28rem solid;
+    border-top: #E5261E 0.28rem solid;
+    width: 8.7rem;
+    height: 5.16rem;
+}
+
+.grid__main__uppertext p{
+    font-size: 2.08rem;
+    color: white;
+    font-weight: 590;
+    font-family: 'SF Pro Display medium';
+}
+
+.grid__main__uppertext div{
+    text-align: right;
+    position: absolute;
+    top: -0.10rem;
+    right: 0.7rem;
+}
+
+.grid__main__lowertext{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.grid__main__lowertext span{
+    font-size: 3.24rem;
+    font-family: 'Winter Sans Trial extrabold';
+    padding: 0.5rem 1rem 0.5rem 0rem;
+    background-color: white;
+} 
+
+.grid__main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid__side{
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    height: 11.7rem;
+}
+
+.catalog{
+    background-color: #E5261E;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.catalog p{
+    font-family: 'Winter Sans Trial italic';
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.grid__side__title{
+    font-size: 5.4rem;
+    font-weight: 400;
+    font-family: 'Winter Sans Trial regular';
+    line-height: 4.8rem;
+}
+
+.grid__side__subtitle{
+    font-size: 0.84rem;
+    font-weight: 590;
+}
+
+.light{
+    color: #E5261E;
+}
+
+.grid__side img{
+    width: 3rem;
+    height: 3rem;
+}
+
+
+
+
+.footer{
+    position: relative;
+}
+
+.footer__back{
+    position: relative;
+    background-color: #1B1918;
+    width: 100%;
+    /* height: 34.2rem; */
+    padding-bottom: 18rem;
+    margin-bottom: 16.2rem;
+}
+
+.footer__back__text{
+    padding: 4.8rem 4.8rem 0 4.8rem;
+    width: 100%;
+}
+
+.footer__back__text__title{
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+}
+
+.footer__back__text span{
+    font-size: 3.24rem;
+    font-family: 'Winter Sans Trial extrabold';
+    color: white;
+}
+
+.footer__back__text p{
+    font-size: 3.24rem;
+    font-family: 'Winter Sans Trial extrabold';
+    color: white;
+}
+
+.footer__back__text__subtitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer__back__text__title img{
+    width: 3.24rem;
+    height: 3.24rem;
+}
+
+
+
+
+
+.footer__back__img{
+    z-index: 10;
+    position: absolute;
+    width: 87.5%;
+    right: 50%;
+    transform: translateX(50%);
+    bottom: -16.2rem;
+    margin-bottom: 3rem;
+    height: 26.4rem;
+    background: linear-gradient(90deg, #B9B9B9 0%, #D7DADB 100%);
+}
+
+.footer__back__img__img{
+    position: absolute;
+    bottom: -0.22rem;
+    left: 29.7rem;
+}
+
+.footer__back__img__text{
+    position: absolute;
+    bottom: 4.2rem;
+    left: 24.68rem;
+}
+
+.relative{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.footer__back__lowertext{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.winter-sans{
+    font-family: 'Winter Sans Trial extrabold';
+    font-size: 2.64rem;
+    padding: 0.5rem 1rem 0.5rem 0rem;
+    background-color: white;
+}
+
+.winter-sans span{
+    font-size: 2.64rem;
+}
+
+.sub{
+    font-size: 1.44rem;
+    padding: 0.5rem 1rem 0.5rem 0rem;
+    background-color: white;;
+}
+
+.footer__back__uppertext{
+    position: absolute;
+    top: 1.2rem;
+    left: 1.2rem;
+    border-left: #E5261E 0.28rem solid;
+    border-top: #E5261E 0.28rem solid;
+    width: 19.08rem;
+    height: 5.16rem;
+}
+
+.footer__back__uppertext div{
+    position: absolute;
+    left: 1.2rem;
+}
+
+.footer__back__uppertext p{
+    font-size: 2.08rem;
+    color: white;
+    font-weight: 590;
+    font-family: 'SF Pro Display medium';
+}
+
+.footer__back__catalog{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 5.88rem;
+    height: 5.88rem;
+    background-color: white;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.footer__back__catalog__img{
+    background-color: #E5261E;
+    border-radius: 50%;
+    width: 4.8rem;
+    height: 4.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__back__catalog__img img{
+    width: 1.2rem;
+    height: 1.24rem;
+}
